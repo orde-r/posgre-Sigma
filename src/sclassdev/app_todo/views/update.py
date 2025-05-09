@@ -22,6 +22,6 @@ def view(request, post_id):
 
         query("UPDATE todo_list SET title = %s WHERE id = %s", [title, post_id])
 
-        return redirect(f"/todo/read/{id}")
+        return redirect(f"/todo/read/{post_id}")
 
     return render(request, 'app_todo/update.html', {'post' : post})       

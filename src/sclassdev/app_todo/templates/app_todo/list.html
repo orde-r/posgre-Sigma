@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daftar Blog</title>
+    <title>Todo List</title>
 </head>
 <body>
-    <h1>Daftar Blog</h1>
-    <a href="/todo/create/">Buat Todo Baru</a>
+    <h1>Todo List</h1>
+    <a href="/todo/create/">Tambah Task Baru</a>
     <hr>
-
+    <h3>Task: </h3>
     {% if posts %}
         <ul>
             {% for post in posts %}

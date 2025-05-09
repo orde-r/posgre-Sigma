@@ -22,6 +22,6 @@ def view(request, post_id):
 
         query("UPDATE blog_post SET title = %s, content = %s WHERE id = %s", [title, content, post_id])
 
-        return redirect(f"/blog/read/{id}")
+        return redirect(f"/blog/read/{post_id}")
 
     return render(request, 'app_blog/update.html', {'post' : post})       
